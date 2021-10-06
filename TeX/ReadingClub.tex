@@ -1,0 +1,51 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{appendix}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcbtheorem[number within=section]{theo}{}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\title{
+	Literature notes
+}
+\author{\small Oussama Chaib}
+\date{\small October 2021}
+
+\begin{document}
+	\maketitle
+%	\tableofcontents
+%	\pagebreak
+\section{Turbulent burning rates of methane and methane–hydrogen mixtures }
+\textit{Link:} Simone's Bibtex/Burn rate, turbulent velocity, consumption speed/1-s2.0-S0010218009000431-main.pdf\\
+\textit{DOI:} http://dx.doi.org/10.1016/j.combustflame.2009.02.001\\ \\
+
+\subsection{Introduction}
+\begin{itemize}
+	\item Potential for using existing natural gas infrastucture to transport a mixture of methane and hydrogen from production site to end user. Hydrogen can then be extracted from the mixture and used to power fuel cells or burned directly.
+	\item Challenges: Safety implications on client and infrastructure (clients would receive a mixture of methane and hydrogen, current infrastructure designed for methane transport).
+	\item Some properties of hydrogen flames:
+	\begin{itemize}
+		\item More reactive than natural gas.
+		\item Laminar burning velocity: $S_l (H_2)  \approx 5.8 S_l (CH_4)$ (at stoichiometry)
+		\item Wider flammability limit.
+	\end{itemize}
+	\item Scope: Identify and quantify the level of risk associated with accidental released of natural gas-hydrogen mixtures in \textbf{turbulent} events (most likely). To formulate and validate explosion and ignition models, turbulent and laminar burning velocities are necessary.
+	\item \textbf{Turbulent flame velocity ($u_t$):} depends on:
+	\begin{enumerate}
+		\item Flow field: RMS turbulent velocity + eddy length scale.
+		\item Flame chemistry: Laminar burning velocity ($u_l$), laminar flame thickness ($\delta_l = v/u_l$), sometimes a Lewis/Markstein number.
+		\item Both the elements aforementioned are also influenced by temperature and pressure (as one would imagine).
+	\end{enumerate}
+	\item These effects on $u_t$ are usually compressed into a compact form involving dimensionless numbers (usually $u_t/u' = f(K) = g(Da)$ where K is the Karlovitz stretch factor and Da is Damköhler's number). Both K and Da relate the chemical + turbulent eddy lifetimes.
+	
+\end{itemize}
+
+
+\end{document}
